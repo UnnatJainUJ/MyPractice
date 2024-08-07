@@ -1,0 +1,21 @@
+// NodeJs fits in backend
+// nodejs alt- php ,flask ,django
+
+// V8 + C++  = NodeJs 
+
+// LocalStorage and document.getElementById does not work in Node.js app 
+
+// There is a difference in js on browser and js on NodeJS application 
+
+// NodeJS is runtime environment like php django flask
+
+package json contains dependencies
+whereas pckage lock json constitutes dependency tree
+
+Module wrapper function
+
+commonjs vs ecmascript
+
+
+## in ecmascript use mjs as filetype instead of js, use export (func) and import from .mjs".....
+whereas in common js module.export = funcName , and const var = require ("filename")

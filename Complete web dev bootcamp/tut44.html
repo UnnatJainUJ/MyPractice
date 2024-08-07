@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+    .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'sec sec sec asi';
+            
+    }
+        .item{
+            background-color: yellow;
+            border: 3px solid black;
+            padding: 12px 23px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: sec;
+        }
+
+        #aside{
+            grid-area: asi;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div  class="item" id="navbar">
+            Home About Contact Us
+        </div>
+        <div  class="item" id="section">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi consequuntur quos accusamus iste omnisaut illo expedita facere veniam, sapiente ullam possimus suscipit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsam veniam, dolorum laborum numquam fuga odio porro id expedita deserunt quibusdam dignissimos quod dolore reprehenderit tempore nihil voluptatibus repudiandae? Doloribus, laborum vitae repudiandae, perferendis quos aperiam quasi ab ratione reprehenderit sed provident accusantium aut ipsa, facere recusandae quisquam debitis vero? Magni fugit dicta fugiat suscipit, doloremque nulla architecto sit qui eaque veritatis quam deleniti non iusto fuga quae ex obcaecati minima voluptatum labore repellat voluptatibus, excepturi ad? Voluptatum impedit unde, nobis error harum magni rerum animi accusantium dolorum expedita quo ipsum, accusamus, placeat ab saepe! Incidunt iure voluptates vitae facilis, ad, porro beatae a tenetur eius ex praesentium rerum eos veniam odit ipsa debitis hic quos qui sed error accusamus aspernatur laborum. Quos doloribus similique numquam odit aliquid. Error, a inventore! Laudantium, aperiam sint vel ea beatae at porro numquam inventore nulla illo et est voluptatem obcaecati ut totam maiores asperiores! Vitae sunt veritatis sit praesentium odio reprehenderit numquam est pariatur corrupti ipsa deleniti ipsam maxime repellat at minima inventore eius dignissimos, tempora accusamus laboriosam libero. Quidem omnis tenetur odio magni amet ipsa accusantium suscipit aperiam sed rem fugit itaque saepe rerum modi exercitationem, corrupti vel quod. A doloribus delectus libero illo cum doloremque autem quis, ullam rem cupiditate ratione vel, excepturi vitae sit qui repudiandae? Reiciendis, nisi blanditiis tempora deserunt ducimus asperiores odit praesentium esse minima. Modi accusantium pariatur ipsa at recusandae doloremque soluta excepturi, et distinctio expedita ipsam quisquam tenetur accusamus aperiam fuga quas fugiat mollitia eius nihil beatae quia nam. Est deleniti, perferendis et velit enim, aliquam molestias reiciendis culpa officia, temporibus alias dolores neque dicta facere minima ab quasi necessitatibus? Inventore suscipit autem culpa quia magnam illum ipsam explicabo porro, laborum similique labore dolorem harum eos a pariatur? Temporibus suscipit, sapiente minus, aliquid modi aut explicabo dolor ullam cum vel reprehenderit veritatis, necessitatibus consequatur accusantium animi vero fuga odio. Dignissimos, doloribus veritatis soluta dolorem cupiditate fugit maxime! Qui cum officiis expedita nemo. Porro earum aliquam impedit voluptate accusantium recusandae et iste sunt temporibus mollitia labore deleniti quaerat blanditiis sit animi ea adipisci, quia qui, rerum ullam! Repellat, aut perferendis quas voluptatum non consequatur illo hic, labore ea rerum neque laboriosam vitae dolore qui totam dolor fugit sequi animi architecto. Sapiente similique vero, explicabo eveniet rerum ratione nobis enim! Ipsam aliquid officiis, nemo sapiente recusandae quod soluta voluptate, in qui nulla similique repellat nam exercitationem nostrum. Debitis.
+        </div>
+        <div  class="item" id="aside">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas soluta expedita quis!
+        </div>
+    </div>
+</body>
+</html>

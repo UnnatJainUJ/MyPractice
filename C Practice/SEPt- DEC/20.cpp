@@ -1,0 +1,86 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n, k = 0;
+    cin >> n;
+    for (int i = 0; i < (n + 1) / 2; i++)
+    {
+        if (i == 0)
+        {
+            for (int i = 0; i < (n - 1) / 2; i++)
+            {
+                cout << " ";
+            }
+            cout << "*";
+            for (int i = 0; i < (n - 1) / 2; i++)
+            {
+                cout << " ";
+            }
+            cout << endl;
+        }
+        else
+        {
+            int l = 0;
+            k = 2 * i - 1;
+            for (int j = 0; j < (n - 1) / 2 - (i); j++)
+            {
+                cout << " ";
+            }
+            cout << "*";
+            while (k != l)
+            {
+                cout << " ";
+                l++;
+            }
+            cout << "*";
+            for (int j = 0; j < (n - 1) / 2 - (i); j++)
+            {
+                cout << " ";
+            }
+
+            cout << endl;
+        }
+    }
+
+    for (int i = 0; i < ((n - 1) / 2); i++)
+    {
+        if (i == ((n - 3) / 2))
+        {
+            for (int i = 0; i < (n - 1) / 2; i++)
+            {
+                cout << " ";
+            }
+            cout << "*";
+            for (int i = 0; i < (n - 1) / 2; i++)
+            {
+                cout << " ";
+            }
+            cout << endl;
+        }
+        else
+        {
+            int l = 0;
+            k = (n - (2 * (i + 2)));
+            for (int j = 0; j < i + 1; j++)
+            {
+                cout << " ";
+            }
+            cout << "*";
+            while (k != l)
+            {
+                cout << " ";
+                l++;
+            }
+            cout << "*";
+            for (int j = 0; j < i + 1; j++)
+            {
+                cout << " ";
+            }
+
+            cout << endl;
+        }
+    }
+
+    return 0;
+}
