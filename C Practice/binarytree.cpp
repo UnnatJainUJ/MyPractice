@@ -45,7 +45,6 @@ void levelOrderTraversal(node *root)
   while (!q.empty())
   {
     node *temp = q.front();
-    cout << temp->data << endl;
     q.pop();
     if (temp == NULL)
     {
@@ -58,6 +57,7 @@ void levelOrderTraversal(node *root)
     }
     else
     {
+      cout << temp->data << " ";
       if (temp->left)
       {
         q.push(temp->left);
@@ -78,6 +78,8 @@ int main()
   root = rootCreation(root);
 
   // 1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
+
+  cout << "Here starts: " << endl;
 
   levelOrderTraversal(root);
 
