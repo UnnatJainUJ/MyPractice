@@ -70,6 +70,59 @@ void levelOrderTraversal(node *root)
   }
 }
 
+void reverseLevelOrderTraversal(node *root)
+{
+  queue<node *> q;
+  deque<node *> deq;
+  q.push(root);
+  deq.push_back(root);
+  q.push(NULL);
+  deq.push_back(NULL);
+
+  while (!q.empty())
+  {
+    node *temp = q.front();
+    q.pop();
+    if (temp == NULL)
+    {
+      // Ek level complete
+      // cout << endl;
+      if (!q.empty())
+      {
+        q.push(NULL);
+        deq.push_back(NULL);
+      }
+    }
+    else
+    {
+      // cout << temp->data << " ";
+      if (temp->left)
+      {
+        q.push(temp->left);
+        deq.push_back(temp->left);
+      }
+      if (temp->right)
+      {
+        q.push(temp->right);
+        deq.push_back(temp->right);
+      }
+    }
+  }
+  while (!deq.empty())
+  {
+    node *temp = deq.back();
+    deq.pop_back();
+    if (temp == NULL)
+    {
+      cout << endl;
+    }
+    else
+    {
+      cout << temp->data << " ";
+    }
+  }
+}
+
 int main()
 {
 
@@ -82,6 +135,10 @@ int main()
   cout << "Here starts: " << endl;
 
   levelOrderTraversal(root);
+
+  cout << "Here starts Reverse Order Traversal: " << endl;
+
+  reverseLevelOrderTraversal(root);
 
   return 0;
 }

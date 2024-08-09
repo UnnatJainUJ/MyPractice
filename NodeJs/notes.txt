@@ -5,3 +5,13 @@ require is used to import module
 function and other things are needed to be exported.
 
 FS package used to work with files
+
+
+NodeJS works:-
+Event queue with blocking and non blocking operations.
+Check all requests and segregate them on blocking (sync ) and non blocking (ASYNC).
+
+Blocking Operations need a thread pool kind of a worker assigned.
+We have limited threads and assigned to tasks.
+
+Event loop assign sync to thread pool
