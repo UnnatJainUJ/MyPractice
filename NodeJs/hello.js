@@ -1,2 +1,4 @@
-console.log("Hey there I am Unnat");
-// UI and DOM are not available in basic node
+const math = require("./math");
+
+// console.log(math);
+console.log(math.add(2, 5));

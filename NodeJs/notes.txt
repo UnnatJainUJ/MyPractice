@@ -1,0 +1,7 @@
+Without DOM and all other ui functions of browser we get js runtime in node
+
+require is used to import module
+
+function and other things are needed to be exported.
+
+FS package used to work with files
