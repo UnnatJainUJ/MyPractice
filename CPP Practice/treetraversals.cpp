@@ -92,7 +92,9 @@ int main()
   preOrder(root);
   cout << endl;
   postOrder(root);
+  cout << endl;
 
+// This iterative traversal destroys the tree.
   stack<node *> s;
   s.push(root);
   while (!s.empty())
@@ -101,16 +103,20 @@ int main()
     if (temp->left)
     {
       s.push(temp->left);
+      temp->left = NULL;
     }
     else if (temp->right)
     {
       s.push(temp->right);
+      temp->right = NULL;
     }
     else
     {
-      cout<<temp->data<<" ";
-      // s.pop();
+      cout << temp->data << " ";
+      s.pop();
     }
   }
+  cout << endl;
+  postOrder(root);
   return 0;
 }
