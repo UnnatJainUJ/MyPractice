@@ -9,8 +9,18 @@ const PORT = 8000;
 // Middleware - Plugins
 app.use(express.urlencoded({ extended: false }));
 
+// Middleware created
+app.use((req, res, next) => {
+  console.log("Hello from middleware 1");
+  // return res.json({ msg: "Hello from 1" });
+  next();
+});
 
-// 
+app.use((req, res, next) => {
+  console.log("Hello from middleware 2");
+  // return res.end("Hey");
+  next();
+});
 
 // Routes
 app.get("/api/users", (req, res) => {
@@ -18,7 +28,7 @@ app.get("/api/users", (req, res) => {
 });
 
 app.get("/users", (req, res) => {
-  const html =`
+  const html = `
 <ul>
 ${users.map((user) => `<li>${user.first_name} </li>`).join("")}
 </ul>`;
